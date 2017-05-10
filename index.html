@@ -9,12 +9,12 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
-	<header class="bg-grey">
+	<header class="bg-grey large">
 		<nav class="flex-container nav">
-			<div class="menu-left">
+			<div class="izquierda">
 				<a href="#bootstrap" style="font-size:21px">START BOOTSTRAP</a>
 			</div>
-			<ul class="menu-right">
+			<ul class="derecha">
 				<li><a href="#portfolio">PORTAFOLIO</a></li>
 				<li><a href="#about">ABOUT</a></li>
 				<li><a href="#contact">CONTACT</a></li>
@@ -22,12 +22,12 @@
 		</nav>
 	</header>
 
-	<section class="flex-container m-top p-top-bot col bg-jade white" id="bootstrap">
+	<section class="flex-container superior p-top-bot col verde white" id="bootstrap">
 		<img src="assets/images/profile.png" alt="" class="">
 		<p class="title-main">START BOOTSTRAP</p>
 		<div class="flex-container line-start">
 			<span class="line"></span>
-			<span class="fa fa-star" style="padding: 14px 6px; font-size:30px"></span>
+			<span class="fa estrella" style="padding: 14px 6px; font-size:30px"></span>
 			<span class="line"></span>
 		</div>
 		<div class="flex-container">
@@ -39,24 +39,29 @@
 		<p class="title-main" style="font-size:42px">PORTFOLIO</p>
 		<div class="flex-container line-start">
 			<span class="line"></span>
-			<span class="fa fa-star" style="padding: 14px 6px; font-size:30px"></span>
+			<span class="fa estrella" style="padding: 14px 6px; font-size:30px"></span>
 			<span class="line"></span>
 		</div>
 		<div class="flex-container images row">
-			<div class="img-items" style="background-image:url(assets/images/portfolio/cabin.png); background-size:cover;"></div>
-			<div class="img-items" style="background-image:url(assets/images/portfolio/cake.png); background-size:cover;"></div>
-			<div class="img-items" style="background-image:url(assets/images/portfolio/circus.png); background-size:cover;"></div>
-			<div class="img-items" style="background-image:url(assets/images/portfolio/game.png); background-size:cover;"></div>
-			<div class="img-items" style="background-image:url(assets/images/portfolio/safe.png); background-size:cover;"></div>
-			<div class="img-items" style="background-image:url(assets/images/portfolio/submarine.png); background-size:cover;"></div>
+			<div class="img-items uno" style="background-image:url(assets/images/portfolio/cabin.png);"></div>
+			<div class="img-items dos" style="background-image:url(assets/images/portfolio/cake.png);;"></div>
+			<div class="img-items tres" style="background-image:url(assets/images/portfolio/circus.png);"></div>
+			<div class="img-items cuatro" style="background-image:url(assets/images/portfolio/game.png);"></div>
+			<div class="img-items cinco" style="background-image:url(assets/images/portfolio/safe.png);"></div>
+			<div class="img-items seis" style="background-image:url(assets/images/portfolio/submarine.png);"></div>
 		</div>
+		<div id="myModal" class="modal">
+			  <span class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <div id="caption"></div>
+			</div>
 	</section>
 
-	<section class="flex-container p-top-bot col bg-jade white" id="about">
-		<p class="title-main" style="font-size:42px">ABOUT</p>
+	<section class="flex-container p-top-bot col verde white" id="about">
+		<p class="title-main">ABOUT</p>
 		<div class="flex-container line-start">
 			<span class="line"></span>
-			<span class="fa fa-star" style="padding: 14px 6px; font-size:30px"></span>
+			<span class="fa estrella"></span>
 			<span class="line"></span>
 		</div>
 		<div class="flex-container about row">
@@ -65,41 +70,40 @@
 		</div>
 		<div class="bt-div white">
 			<span class="fa fa-download">
-				<input type="button"  class="bt-down white" value="Download Theme">
+				<input type="button" id="downl" class="bt-down white" value="Download Theme">
 			</span>
 		</div>
 	</section>
 
-	<section class="flex-container p-top-bot col grey" id="contactanos">
+	<section class="flex-container p-top-bot col grey" id="contact">
 		<p class="title-main" style="font-size:42px">CONTACT ME</p>
 		<div class="flex-container line-start">
 			<span class="line"></span>
-			<span class="fa fa-star" style="padding: 14px 6px; font-size:30px"></span>
+			<span class="fa estrella" style="padding: 14px 6px; font-size:30px"></span>
 			<span class="line"></span>
 		</div>
 		<form action="" id="form">
-	      	<div class="contentinput">
-	            <label class="label" for="nombre">Name</label>
-	            <input class="input-registro" name="nombre" id="name" type="text" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
+			<div class="row">
+				<div class="entrada">
+	            <input class="input-registro" placeholder="Nombre" id="name" type="text" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
 	            <span class="span-form">Please enter your name.</span>
 	         </div>
-	          <div class="contentinput">
-	            <label class="label" for="correo">Email address</label>
-	            <input class="input-registro" name="correo" id="email" type="email" title="Correo no válido. Ejemplo: name@domain.com" >
+	          <div class="entrada">
+	            <input class="input-registro" placeholder="Email address" id="email" type="email" title="Correo no válido. Ejemplo: name@domain.com" >
 	            <span class="span-form">Please enter your email address.</span>
 	          </div>
-	          <div class="contentinput">
-		          <label class="label" for="phone">Phone Number</label>
-		          <input class="input-registro" id="phone" type="text" name="phone" title="El número celular debe empezar con 9" 
+	          <div class="entrada">
+		          <input class="input-registro" placeholder="Phone Number" id="phone" type="text" name="phone" title="El número celular debe empezar con 9" 
 		          			pattern="[9]{1}[0-9]{8}">
 		          <span class="span-form">Please enter your phone number.</span>
 		       </div>
-	          <div class="contentinput">
-	            <label class="label" for="ciudad">Message</label>
-	            <input class="input-registro" name="ciudad" id="city" type="text" title="Debe empezar con mayúscula">
+	          <div class="entrada">
+	            <textarea class="input-registro" placeholder="Message" id="city" type="text" title="Debe empezar con mayúscula"></textarea>
 	            <span class="span-form">Please enter a message.</span>
 	          </div>
-	        <button type="submit" class="sign bg-jade">Send</button>
+	        	<button type="submit" id="enviar" class="sign">Send</button>
+			</div>
+	      	
       </form>
 	</section>
 
@@ -117,6 +121,6 @@
 		</div>
 		<div id="bajada">Copyright © Your Website 2016</div>
 	</footer>
-
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
