@@ -1,3 +1,43 @@
-.centro {
-	justify-content: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-jade{
+  background-color: #18BC9C;
+}
+
+.bg-grey{
+  background-color: #2C3E50;
+}
+
+.white{
+  color: white;
+}
+
+.grey{
+  color: #2C3E50;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end{
+  justify-content: flex-end;
+}
+
+.flex-start{
+  justify-content: flex-start;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.row{
+  flex-direction: row;
 }
