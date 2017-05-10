@@ -1,15 +1,4 @@
-a {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-li{
-  list-style: none;
-}
-
-/** header **/
+/**Cabecera**/
 header{
   top: 0;
   width: 100%;
@@ -21,6 +10,21 @@ header{
   width: 100%;
   height: 70px;
   justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+a:hover {
+  color: #18BC9C;
+}
+
+li{
+  list-style: none;
 }
 
 .menu-left{
@@ -35,7 +39,7 @@ header{
   justify-content: space-between;
 }
 
-/** section start bootstrap **/
+/**Bootstrap **/
 .m-top{
   margin-top: 70px;
 }
@@ -67,7 +71,7 @@ header{
   font-size: 25px;
 }
 
-/** section portfolio **/
+/**Portafolio**/
 .images{
   margin-left: 100px;
   margin-right: 100px;
@@ -81,17 +85,19 @@ header{
   margin-bottom: 32px;
 }
 
-/** section about **/
+/** About **/
 .about{
   width: 56%;
   justify-content: space-between;
 }
 
 .text-col{
+  text-align: justify;
   font-family: Lato,sans-serif;
   font-size: 20px;
   width: 360px;
 }
+
 
 .bt-div{
   margin-top: 35px;
@@ -105,4 +111,52 @@ header{
   font-size: 20px;
   border: 0;
   background-color: rgba(122, 226, 26, 0);
+}
+
+/** Formulario **/
+div.contentinput{
+  border-bottom: 1px solid #728099;
+  border-top: 1px solid #728099;
+}
+
+label.label {
+  color: #bfc7d9;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 300;
+  top: -6px;
+  left: 0;
+}
+
+label.label.active { /*Al dar click de activa la clase active disminuirá el tamaño de la fuente*/
+  top: -21px;
+  font-size: 10px;
+  line-height: 12px;
+  color: black;
+}
+
+.span-form {
+  position: relative;
+  width: 20px;
+  display: none;
+}
+
+.register-text{
+  font-size: 12px;
+}
+
+.input-registro{
+  width: 90%;
+  border: 0;
+  margin-bottom: 30px;
+}
+
+.input-registro:focus{
+  outline: none;
+}
+
+#sign {
+  padding: 6px;
 }
