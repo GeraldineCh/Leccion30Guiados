@@ -140,7 +140,7 @@ label.label.active { /*Al dar click de activa la clase active disminuirá el tam
 .span-form {
   position: relative;
   width: 20px;
-  display: none;
+  visibility: hidden;
 }
 
 .register-text{
@@ -159,4 +159,44 @@ label.label.active { /*Al dar click de activa la clase active disminuirá el tam
 
 #sign {
   padding: 6px;
+}
+
+/*Footer*/
+footer {
+  font-family: Lato,sans-serif;
+  background-color: #2C3E50;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.footer-1 {
+  padding: 2%;
+}
+
+.footer-cont {
+  font-size: 21px;
+  width: 30%;
+  margin-left: 3%;
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.footer-txt {
+  margin: 2% 9%;
+}
+
+.link-footer {
+  font-size: 21px;
+  color: #18BC9C;
+}
+
+.link-footer:hover {
+  text-decoration-line: underline;
+}
+
+#bajada {
+  padding: 1%;
+  text-align: center;
+  background-color: #233140;
 }
